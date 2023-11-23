@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import './src/styles/common.css';
 ---
 
 <!doctype html>
@@ -20,13 +21,12 @@ const { title } = Astro.props;
 		<meta property="og:image" content="https://fom-create.com/ogp.JPG" />
 		<meta property="twitter:card" content="summary_large_image">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.3.1/gridlex.min.css" async="" defer="">
-		<link rel="stylesheet" href="src/styles/common.css" async="" defer="">
 		<link rel="icon" type="image/x-icon" href="/favicon.ico">
 		<link rel="canonical" href="https://fom-create.com">
 		<script src="https://www.googletagmanager.com/gtag/js?id=G-G2K66HM9P5" async=""></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&Sofia&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Sofia&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
