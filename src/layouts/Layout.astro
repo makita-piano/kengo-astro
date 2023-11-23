@@ -4,7 +4,6 @@ interface Props {
 }
 
 const { title } = Astro.props;
-import './src/styles/common.css';
 ---
 
 <!doctype html>
@@ -26,6 +25,7 @@ import './src/styles/common.css';
 		<script src="https://www.googletagmanager.com/gtag/js?id=G-G2K66HM9P5" async=""></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="/common.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Sofia&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
