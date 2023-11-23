@@ -7,12 +7,26 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="FoMクリエイトは東京・埼玉を拠点に、演奏動画の収録・制作を行っています。ピアノ・クラシックのほか、お教室の発表会やプロモーション動画など広範囲に制作いたします。" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta property="og:url" content="https://fom-create.com" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="FoMクリエイト" />
+		<meta property="og:description" content="FoMクリエイトは東京・埼玉を拠点に、演奏動画の収録・制作を行っています。ピアノ・クラシックのほか、お教室の発表会やプロモーション動画など広範囲に制作いたします。" />
+		<meta property="og:site_name" content="FoMクリエイト" />
+		<meta property="og:image" content="https://fom-create.com/ogp.JPG" />
+		<meta property="twitter:card" content="summary_large_image">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.3.1/gridlex.min.css" async="" defer="">
+		<link rel="stylesheet" href="src/styles/common.css" async="" defer="">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="canonical" href="https://fom-create.com">
+		<script src="https://www.googletagmanager.com/gtag/js?id=G-G2K66HM9P5" async=""></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&Sofia&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -21,31 +35,14 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+		font-family: 'Noto Sans JP', sans-serif;
+		font-size: 16px;
+		box-sizing: border-box;
+		line-height: 1.5;
+		letter-spacing: 1px;
+		background: #f0ebeb;
+		color: #333;
+		scroll-behavior: smooth;
 	}
 </style>
