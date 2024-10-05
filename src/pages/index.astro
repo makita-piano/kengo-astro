@@ -1,5 +1,9 @@
 ---
+import { Image, getImage } from 'astro:assets';
+import ProfileImage from '/src/img/profile.jpeg';
 import Layout from '../layouts/Layout.astro';
+import ImageSrc from '/src/img/_MG_2128.JPG';
+const sampleImage = await getImage({ src: ImageSrc, format: 'webp' });
 ---
 
 <Layout title="FoMクリエイト">
@@ -195,7 +199,7 @@ import Layout from '../layouts/Layout.astro';
 						<div class="grid col-12">
 							<div class="grid col-12" style="margin: auto;text-align: center">
 								<div class="col-12">
-									<img src="/profile.jpeg" width="100%" style="width:8rem;border-radius: 50%;height: 8rem" alt="iwamoto">
+									<Image src={ProfileImage} width="100%" style="width:8rem;border-radius: 50%;height: 8rem" alt="iwamoto">
 								</div>
 								<div class="col-12">岩本　健吾</div>
 							</div>
